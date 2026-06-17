@@ -1,0 +1,15 @@
+# Traditional ML & MLOps
+xgboost
+pandas
+numpy
+mlflow
+
+# RAG & DB
+qdrant-client
+langchain
+langchain-community
+sentence-transformers
+
+# Agents & Gateway
+langgraph
+litellm
