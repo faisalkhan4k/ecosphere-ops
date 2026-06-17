@@ -1,0 +1,21 @@
+./myenv1
+# Ignore virtual environments
+.venv/
+venv/
+env/
+.conda/
+.env/
+D:\machine-learning-projects\ecosphere-ops\.env
+.env.local
+.env
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore local datasets (we want to keep our repo clean!)
+*.csv
+*.xlsx
+
+# Ignore MLflow local tracking files
+mlruns/
+mlflow_data/
