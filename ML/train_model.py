@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 import mlflow
 import mlflow.xgboost
+import pickle
 import os
 
 def train_leak_detector():
@@ -49,6 +50,10 @@ def train_leak_detector():
         mlflow.log_params(model_params)
         mlflow.log_metric("accuracy", accuracy)
         mlflow.xgboost.log_model(model, "model")
+
+        with open(os.path.join(os.path.dirname(__file__), "leak_detector_model.pkl"), "wb") as f:
+            pickle.dump(model, f)
+        
         
         print("\nSuccess! Model and metrics successfully logged to MLflow.")
 

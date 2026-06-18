@@ -15,7 +15,7 @@ __pycache__/
 # Ignore local datasets (we want to keep our repo clean!)
 *.csv
 *.xlsx
-
+*.pkl
 # Ignore MLflow local tracking files
 mlruns/
 mlflow_data/
