@@ -3,6 +3,10 @@
 .venv/
 venv/
 env/
+./agents/mlflows.db
+./mlflows.db
+mlflows.db
+mlflow.db
 .conda/
 .env/
 D:\machine-learning-projects\ecosphere-ops\.env

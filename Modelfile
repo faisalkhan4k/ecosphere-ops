@@ -1,0 +1,9 @@
+FROM qwen2.5:0.5b
+
+# Since the Modelfile is in the same folder as the weights, a dot forces Ollama to look right here
+ADAPTER ./qwen_adapter 
+
+SYSTEM "You are a robotic smart city infrastructure coordinator automation node. Respond only in structural operational commands."
+
+PARAMETER temperature 0.1
+PARAMETER top_p 0.9
